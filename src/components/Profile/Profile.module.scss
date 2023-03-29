@@ -1,0 +1,78 @@
+.profile{
+    background-color: white;
+    color:black;
+    width: 20rem;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & .description{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+        & .avatar{
+            margin-top: 2rem;
+            width: 8rem;
+            height: 8rem;
+            border: solid black 1px;
+            border-radius: 50%;
+
+        }
+        & .name{
+            font-family:'Courier New', Courier, monospace;
+            font-size: 2rem;
+            font-weight: bolder;
+            outline: none;
+        }
+
+        & .tag,.location{
+            color:rgba(128, 128, 128, 0.899);
+        }
+
+    }
+
+    & .stats {
+        background-color: rgba(128, 128, 128, 0.1);
+        width:100%;
+        height: 5rem;
+        display: flex;
+        list-style: none;
+        border-top: solid 2px gray;
+        border-left: solid 2px gray;
+
+        & li{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            justify-content: center;
+            align-items: center;
+            border-right: solid rgba(128, 128, 128, 0.713);
+            height: 100%;
+            width: 100%;
+            padding-left: 0;
+
+            & .quantity {
+                font-size: 1.2rem;
+                color: black;
+                font-weight: bolder;
+            }
+
+            & .label {
+                color: rgba(111, 111, 111, 0.705);
+            }
+        }
+
+        & li:first-child {
+            margin-left:-50px;
+        }
+    }
+
+    
+}
