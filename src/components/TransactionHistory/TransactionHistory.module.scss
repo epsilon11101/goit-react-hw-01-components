@@ -1,0 +1,44 @@
+.transaction-history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+background-color: black;
+
+    & thead{
+        width: 100%;
+        border: 2px white solid;
+    }
+
+    & tbody{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 2px white solid;
+    }
+
+    & tr{
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        & th,& td{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid gray;  
+            height: 100%;
+            flex: 1;
+        }
+        &:nth-child(even){
+            background-color: white;
+            color: black;
+
+        }
+
+    }
+}
